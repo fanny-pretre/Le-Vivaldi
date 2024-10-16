@@ -1,0 +1,74 @@
+@use "variables";
+
+@import "../components/styles/MenuBurger.scss";
+@import "../components/styles/Nav.scss";
+
+@import "../pages/styles/Home.scss";
+
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  font-family: variables.$font-text;
+  font-size: 0.9rem;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.content {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  border-radius: 1rem 1rem 0 0;
+  background-color: #190000;
+}
+
+button {
+  background-color: white;
+  border: none;
+  padding: 0.4rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: variables.$background-color;
+  border: 1px variables.$font-color solid;
+  width: 50%;
+  cursor: pointer;
+  a {
+    text-decoration: none;
+    color: variables.$background-color;
+  }
+
+  &:hover {
+    background-color: variables.$background-color;
+    color: variables.$font-color;
+    border: 1px variables.$font-color solid;
+    cursor: pointer;
+  }
+}
+
+.image-full-screen-50 {
+  height: 50%;
+  object-fit: cover;
+}
+
+h1 {
+  font-family: variables.$font-title;
+  padding: 1.5rem 0;
+  font-size: 5rem;
+}
+
+h2 {
+  font-family: variables.$font-title;
+  padding: 1.5rem 0;
+  font-size: 3rem;
+}
