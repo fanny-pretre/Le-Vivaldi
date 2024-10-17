@@ -6,8 +6,8 @@
   align-items: center;
   width: 100vw;
   position: fixed;
-  top: 0;
-  z-index: 1001;
+  top: 0.5rem;
+  z-index: 1003;
 
   .nav-part-2 {
     height: 8vh;
@@ -16,6 +16,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    z-index: 1003;
     img {
       height: 8vh;
     }

@@ -2,6 +2,7 @@
 
 @import "../components/styles/MenuBurger.scss";
 @import "../components/styles/Nav.scss";
+@import "../components/styles/Footer.scss";
 
 @import "../pages/styles/Home.scss";
 
@@ -14,6 +15,9 @@ body {
   width: 100vw;
   font-family: variables.$font-text;
   font-size: 0.9rem;
+  background-color: #190000;
+  color: white;
+  font-weight: 500;
 }
 
 .container {
@@ -30,7 +34,6 @@ body {
   position: relative;
   z-index: 1;
   border-radius: 1rem 1rem 0 0;
-  background-color: #190000;
 }
 
 button {
@@ -71,4 +74,8 @@ h2 {
   font-family: variables.$font-title;
   padding: 1.5rem 0;
   font-size: 3rem;
+}
+
+.bold {
+  font-weight: 800;
 }

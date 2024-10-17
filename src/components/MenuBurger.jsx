@@ -42,24 +42,44 @@ function MenuBurger() {
           )}
         </button>
       </div>
+      <div className={`styledMenu ${open ? "open" : ""}`}>
+        <ul>
+          <li className="nav-li">
+            <Link onClick={() => setOpen(false)} to="/">
+              Accueil
+            </Link>
+          </li>
+          <li className="nav-li">
+            <Link onClick={() => setOpen(false)} to="/concept">
+              Concept
+            </Link>
+          </li>
+          <li className="nav-li">
+            <Link onClick={() => setOpen(false)} to="/carte">
+              Carte
+            </Link>
+          </li>
+          <li className="nav-li">
+            <Link onClick={() => setOpen(false)} to="/réservation">
+              Réservation
+            </Link>
+          </li>
+          <li className="nav-li">
+            <Link onClick={() => setOpen(false)} to="/équipe">
+              Équipe
+            </Link>
+          </li>
+        </ul>
+        <div className="menu-bottom">
+          <p>Inscrivez-vous à notre Newsletter !</p>
 
-      <ul className={`styledMenu ${open ? "open" : ""}`}>
-        <li className="nav-li">
-          <Link to="/">Accueil</Link>
-        </li>
-        <li className="nav-li">
-          <Link to="/concept">Concept</Link>
-        </li>
-        <li className="nav-li">
-          <Link to="/carte">Carte</Link>
-        </li>
-        <li className="nav-li">
-          <Link to="/réservation">Réservation</Link>
-        </li>
-        <li className="nav-li">
-          <Link to="/équipe">Equipe</Link>
-        </li>
-      </ul>
+          <p>
+            {" "}
+            @ Le Vivaldi {new Date().getFullYear()}, projet fictif réalisé par
+            Fanny Prêtre{" "}
+          </p>
+        </div>
+      </div>
     </nav>
   );
 }

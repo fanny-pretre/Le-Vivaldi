@@ -9,35 +9,47 @@
 }
 
 .styledMenu {
-  list-style: none;
-  padding: 4rem 5rem 3rem;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
   width: 100vw;
-  background: black;
+  background: variables.$background-color;
   transform: translateX(-100%);
   transition: transform 0.3s ease-in-out;
-  z-index: 1000;
+  z-index: 500;
 
-  a {
-    text-decoration: none;
-  }
-
-  .menu-li {
-    color: white;
-    padding: 1rem;
-    cursor: pointer;
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    gap: 0.5rem;
+  ul {
+    margin: 0 0 3rem 3rem;
+    list-style: none;
+    padding: 0;
+    li {
+      a {
+        text-decoration: none;
+        color: white;
+        font-size: 2rem;
+      }
+    }
   }
 
   &.open {
     transform: translateX(0);
   }
+}
+
+.button-section {
+  position: relative;
+  margin-left: 1rem;
+  z-index: 1001;
+}
+
+.menu-bottom {
+  margin: 0 0 3rem 3rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 0.5rem;
 }
