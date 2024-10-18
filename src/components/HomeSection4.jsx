@@ -13,20 +13,20 @@ function HomeSection4() {
         <p>
           Vous souhaitez organiser un événement privé dans un cadre élégant et
           unique ? Le Vivaldi vous ouvre ses portes pour vos réceptions,
-          anniversaires, dîners d&aposaffaires ou tout autre événement spécial.
+          anniversaires, dîners d&apos;affaires ou tout autre événement spécial.
           Nous vous proposons de privatiser notre restaurant et de profiter
-          d&aposun espace convivial, entièrement dédié à vos invités.
+          d&apos;un espace convivial, entièrement dédié à vos invités.
         </p>
         <p>
           Privatisez Le Vivaldi et offrez à vos convives une expérience
           culinaire exclusive, où saveurs et convivialité se rencontrent dans un
           cadre chaleureux et raffiné. Pour toute demande de privatisation,
-          n&aposhésitez pas à nous contacter. Nous serons ravis de vous
+          n&apos;hésitez pas à nous contacter. Nous serons ravis de vous
           accompagner dans la réalisation de votre événement.
         </p>
         <button>
           {" "}
-          <Link to="/réservation"> En savoir plus </Link>
+          <Link to="/réservation/espace"> En savoir plus </Link>
         </button>
       </div>
     </section>

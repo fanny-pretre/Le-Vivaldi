@@ -71,8 +71,10 @@ function MenuBurger() {
           </li>
         </ul>
         <div className="menu-bottom">
-          <p>Inscrivez-vous à notre Newsletter !</p>
-
+          {" "}
+          <Link onClick={() => setOpen(false)} to="/newsletter">
+            Inscrivez-vous à notre Newsletter !{" "}
+          </Link>
           <p>
             {" "}
             @ Le Vivaldi {new Date().getFullYear()}, projet fictif réalisé par

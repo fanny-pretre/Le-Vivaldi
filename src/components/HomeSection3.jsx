@@ -37,7 +37,7 @@ function HomeSection3() {
         <p>
           Chaque saison apporte son lot de surprises : au printemps, découvrez
           des mets légers et parfumés ; en été, savourez des plats colorés et
-          ensoleillés ; à l&aposautomne, laissez-vous réconforter par des
+          ensoleillés ; à l&apos;automne, laissez-vous réconforter par des
           saveurs riches et boisées ; et en hiver, réchauffez-vous avec nos
           recettes généreuses et réconfortantes.
         </p>

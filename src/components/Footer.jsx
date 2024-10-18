@@ -8,7 +8,7 @@ function Footer() {
           <Link to="/concept">Le concept du Vivaldi</Link>
         </li>
         <li>
-          <Link to="/concept">Notre menu de saison </Link>{" "}
+          <Link to="/carte">Notre menu de saison </Link>{" "}
         </li>
         <li>
           <Link to="/jobs">Jobs </Link>
@@ -30,7 +30,9 @@ function Footer() {
         </svg>
       </a>
       <div className="footer-text">
-        <p>Inscrivez-vous à notre Newsletter !</p>
+        <Link onClick={() => setOpen(false)} to="/newsletter">
+          Inscrivez-vous à notre Newsletter !{" "}
+        </Link>
         <p>
           {" "}
           @ Le Vivaldi {new Date().getFullYear()}, projet fictif réalisé par

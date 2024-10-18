@@ -6,9 +6,11 @@
   align-items: center;
   width: 100vw;
   position: fixed;
-  top: 0.5rem;
   z-index: 1003;
+  transition: top 0.3s ease-in-out;
+  padding: 0.3rem 0 0.3rem;
 
+  // Partie pour le contenu de la navbar
   .nav-part-2 {
     height: 8vh;
     width: 85vw;
@@ -17,8 +19,21 @@
     align-items: center;
     justify-content: space-between;
     z-index: 1003;
+
+    // Styles pour les images du logo
     img {
       height: 8vh;
     }
+  }
+
+  // Gestion de la visibilité de la navbar
+  &.colored {
+    background-color: variables.$background-color;
+    top: 0rem;
+    border-bottom: white solid 0.1rem;
+  }
+
+  &.transparent {
+    top: 0rem;
   }
 }

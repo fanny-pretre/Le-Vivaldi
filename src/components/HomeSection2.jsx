@@ -27,11 +27,11 @@ function HomeSection2() {
         <p>
           {" "}
           Chez Le Vivaldi, nous célébrons la richesse et la diversité des
-          saveurs à travers les quatre saisons. Inspirés par l&aposœuvre
-          intemporelle d&aposAntonio Vivaldi, nous avons imaginé un concept
-          unique : une cuisine qui évolue au fil de l’année, pour offrir à nos
-          clients des plats créatifs, frais et en harmonie avec les produits de
-          chaque saison.{" "}
+          saveurs à travers les quatre saisons. Inspirés par l&apos;œuvre
+          intemporelle d&apos;Antonio Vivaldi, nous avons imaginé un concept
+          unique : une cuisine qui évolue au fil de l&apos;année, pour offrir à
+          nos clients des plats créatifs, frais et en harmonie avec les produits
+          de chaque saison.
         </p>
         <button>
           {" "}
