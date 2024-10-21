@@ -1,12 +1,26 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import Cuisine from "../assets/cuisine.jpg";
 
 function HomeSection5() {
+  const imageVariants = {
+    hidden: { x: "100%", opacity: 0 }, // Position hors de l'écran à gauche
+    visible: { x: 0, opacity: 1, transition: { duration: 0.7 } }, // Position normale
+  };
+
   return (
     <section className="home-section-3">
       <h2> L&apos;équipe</h2>
-      <img className="image-full-screen" src={Cuisine} />
+      <motion.img
+        className="image-full-screen"
+        src={Cuisine}
+        alt="équipe"
+        variants={imageVariants}
+        initial="hidden"
+        whileInView="visible" // Active l'animation lors de la vue
+        viewport={{ once: true }}
+      />
       <div className="home-text">
         <p>
           Derrière chaque plat servi au Vivaldi, il y a une équipe passionnée,

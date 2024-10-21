@@ -1,14 +1,34 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import Restaurant from "../assets/restaurant.jpg";
 import Bar from "../assets/bar.jpg";
 
 function HomeSection4() {
+  const imageVariants = {
+    hidden: { x: "-100%", opacity: 0 }, // Position hors de l'écran à gauche
+    visible: { x: 0, opacity: 1, transition: { duration: 0.7 } }, // Position normale
+  };
+
   return (
     <section className="home-section-3">
       <h2> Réservez nos espaces</h2>
-      <img className="image-full-screen-50" src={Restaurant} />
-      <img className="image-full-screen-50" src={Bar} />
+      <motion.img
+        className="image-full-screen-50"
+        src={Restaurant}
+        variants={imageVariants}
+        initial="hidden"
+        whileInView="visible" // Active l'animation lors de la vue
+        viewport={{ once: true }} // N'anime qu'une fois lorsqu'elle est visible
+      />
+      <motion.img
+        className="image-full-screen-50"
+        src={Bar}
+        variants={imageVariants}
+        initial="hidden"
+        whileInView="visible" // Active l'animation lors de la vue
+        viewport={{ once: true }} // N'anime qu'une fois lorsqu'elle est visible
+      />
       <div className="home-text">
         <p>
           Vous souhaitez organiser un événement privé dans un cadre élégant et

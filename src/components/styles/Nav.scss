@@ -2,7 +2,7 @@
   background-color: transparent;
   height: 8vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   width: 100vw;
   position: fixed;
@@ -10,27 +10,37 @@
   transition: top 0.3s ease-in-out;
   padding: 0.3rem 0 0.3rem;
 
-  // Partie pour le contenu de la navbar
-  .nav-part-2 {
-    height: 8vh;
-    width: 85vw;
+  .nav-top {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    z-index: 1003;
 
-    // Styles pour les images du logo
-    img {
+    .nav-part-2 {
       height: 8vh;
+      width: 85vw;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1003;
+
+      img {
+        height: 8vh;
+      }
     }
   }
 
+  .rotating-info {
+    padding: 0.2rem;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+  }
   // Gestion de la visibilité de la navbar
   &.colored {
     background-color: variables.$background-color;
     top: 0rem;
     border-bottom: white solid 0.1rem;
+    height: 11vh;
   }
 
   &.transparent {

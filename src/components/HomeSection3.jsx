@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 import cuisineAutomne from "../assets/cuisineautomne.webp";
 import cuisineHiver from "../assets/cuisinehiver.jpg";
@@ -20,13 +21,22 @@ function HomeSection3() {
     return () => clearInterval(interval);
   }, [images.length]);
 
+  const imageVariants = {
+    hidden: { x: "100%", opacity: 0 }, // Position hors de l'écran à gauche
+    visible: { x: 0, opacity: 1, transition: { duration: 0.7 } }, // Position normale
+  };
+
   return (
     <section className="home-section-3">
       <h2> La Carte</h2>
-      <img
+      <motion.img
         className="image-full-screen"
         src={images[currentImageIndex]}
         alt="cuisine de saison"
+        variants={imageVariants}
+        initial="hidden"
+        whileInView="visible" // Active l'animation lors de la vue
+        viewport={{ once: true }} // N'anime qu'une fois lorsqu'elle est visible
       />
       <div className="home-text">
         <p>
