@@ -7,6 +7,13 @@ import PrintempsLogo from "../assets/Printemps.png";
 import EteLogo from "../assets/Ete.png";
 
 function HomeSection2() {
+  const horaires = [
+    { jours: "lun, mar, mer, jeu", horaires: "11:45 - 14:15 / 18:30 - 22:30" },
+    { jours: "ven", horaires: "11:45 - 14:15 / 18:30 - 22:45" },
+    { jours: "sam", horaires: "12:00 - 15:15 / 18:30 - 22:45" },
+    { jours: "dim", horaires: "12:00 - 15:15 / 18:30 - 22:30" },
+  ];
+
   const images = [AutomneLogo, HiverLogo, PrintempsLogo, EteLogo];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -40,14 +47,12 @@ function HomeSection2() {
       </div>
 
       <div className="home-horaires">
-        <p className="bold">lun, mar, mer, jeu</p>
-        <p> 11:45 - 14:15 / 18:30 - 22:30 </p>
-        <p className="bold">ven </p>
-        <p> 11:45 - 14:15 / 18:30 - 22:45 </p>
-        <p className="bold"> sam </p>
-        <p> 12:00 - 15:15 / 18:30 - 22:45 </p>
-        <p className="bold">dim </p>
-        <p> 12:00 - 15:15 / 18:30 - 22:30 </p>
+        {horaires.map((horaire, index) => (
+          <div key={index}>
+            <p className="bold">{horaire.jours}</p>
+            <p>{horaire.horaires}</p>
+          </div>
+        ))}
       </div>
     </section>
   );
