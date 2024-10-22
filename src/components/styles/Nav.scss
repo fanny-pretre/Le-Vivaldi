@@ -9,8 +9,9 @@
   left: 0;
   z-index: 1003;
   transition: top 0.3s ease-in-out, background-color 0.3s ease-in-out;
-  padding: 0.5rem 0;
+  padding: 0.5rem 1rem;
   height: auto; // Automatiser la hauteur pour s'adapter au contenu
+  box-sizing: border-box;
 
   .nav-top {
     display: flex;
@@ -18,11 +19,13 @@
     align-items: center;
     justify-content: space-between;
     height: 50px; // Ajuster pour le contenu de la navbar
-    width: 85vw;
     z-index: 1003;
+    width: 100%;
+    box-sizing: border-box;
 
     .nav-part-2 {
       height: 100%;
+      width: 100%;
       display: flex;
       flex-direction: row;
       align-items: center;

@@ -1,14 +1,14 @@
 import { Outlet } from "react-router-dom";
 
-import Nav from "./components/Nav";
+import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer";
-import HomeSection1 from "./components/HomeSection1";
+import DynamicHomeSection from "./components/DynamicHomeSection";
 
 function App() {
   return (
     <main className="container">
       <Nav />
-      <HomeSection1 />
+      <DynamicHomeSection />
       <div className="content">
         <Outlet />
       </div>

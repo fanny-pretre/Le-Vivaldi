@@ -2,8 +2,8 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import MenuBurger from "./MenuBurger";
 import RotatingBloc from "./RotatingBloc";
-import Logo from "../assets/Logo.png";
-import Logo2 from "../assets/Logo2.png";
+import Logo from "../../assets/Logo.png";
+import Logo2 from "../../assets/Logo2.png";
 
 function Nav() {
   const [transparentNavbar, setTransparentNavbar] = useState(true);
