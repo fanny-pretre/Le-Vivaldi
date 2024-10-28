@@ -4,7 +4,8 @@ import { useLocation } from "react-router-dom";
 
 import Automne1 from "../assets/cuisineautomne.jpg";
 import Automne2 from "../assets/cuisineautomne2.jpg";
-import Bar from "../assets/bar.jpg";
+import Concept from "../assets/concept.jpg";
+import Menu from "../assets/menu.jpg";
 
 // Composant générique
 function Header({ images, title }) {
@@ -66,8 +67,18 @@ export default function DynamicHomeSection() {
     };
   } else if (location.pathname === "/concept") {
     sectionData = {
-      images: [Bar],
+      images: [Concept],
       title: "Le concept du restaurant",
+    };
+  } else if (location.pathname === "/carte") {
+    sectionData = {
+      images: [Menu],
+      title: "Découvrez le menu du restaurant !",
+    };
+  } else if (location.pathname === "/réservation/table") {
+    sectionData = {
+      images: [Menu],
+      title: "Réservez une table au Vivaldi !",
     };
   } else {
     sectionData = {

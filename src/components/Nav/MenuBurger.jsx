@@ -60,7 +60,7 @@ function MenuBurger() {
             </Link>
           </li>
           <li className="nav-li">
-            <Link onClick={() => setOpen(false)} to="/réservation">
+            <Link onClick={() => setOpen(false)} to="/réservation/table">
               Réservation
             </Link>
           </li>

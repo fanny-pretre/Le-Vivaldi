@@ -1,0 +1,19 @@
+.concept-text {
+  padding: 0 2rem 0 2rem;
+  text-align: center;
+  gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+
+  h2 {
+    font-size: 2rem;
+    font-family: variables.$font-text;
+  }
+}
+
+.concept-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
